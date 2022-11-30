@@ -3,6 +3,9 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
+    - name: "just execute a ls -lrt command"
+      shell: "ls -lrt"
+      register: "output"
     - name: Instal nginx
       yum:
         name: nginx
