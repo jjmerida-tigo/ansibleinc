@@ -1,8 +1,8 @@
 ---
 - hosts: all
   vars:
-    ansible_python_interpreter: /usr/bin/python3.6
-  tasks:
+    ansible_python_interpreter: "/usr/bin/python3.6"
+"  tasks:
     - name: "just execute a ls -lrt command"
       shell: "ls -lrt"
       register: "output"
